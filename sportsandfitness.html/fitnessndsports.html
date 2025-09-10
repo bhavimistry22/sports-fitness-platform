@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+         let Name=document.forms.cform.name.value;
+         let Email=document.forms.cform.email.value;
+         let Msg=document.forms.cform.message.value;
+         const errorNodes=document.querySelectorAll(".error");
+         const success=document.querySelectorAll("#success");
+        function validateform(){
+            if(Name.length<1){
+                errorNodes[0].innertext="Name must be full name";
+                nameInput.classList.add("error-border");
+            }
+        }
+          
+    </script>
+</head>
+
+</html>
+
+<header>
+    <div id="navbar" class="navbaar">
+        <div class="left">
+            <!-- i am left -->
+            <img class="img1" src="logo_image.png" />
+        </div>
+
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#about">About</a></li>
+            <li class="item"><a href="#contact">Contact</a></li>
+            <li class="item"><a href="#events">Events</a></li>
+            <li class="item"><a href="#plan-pricing">Plan-Pricing</a></li>
+            <li class="item"><a href="#sports">Sports</a></li>
+        </ul>
+
+
+        <div class="login">
+            <img class="img" src="login.png" />
+            <a href="login.html" class="l">login</a>
+        </div>
+    </div>
+</header>
+
+
+
+<!----------------------------------------HOME SECTION STARTS------------------------------------------>
+<section id="home">
+    <h1 class="heading">Keep Your Body Moving</h1>
+
+</section>
+<!----------------------------------------HOME SECTION ENDS-------------------------------------------->
+
+
+<!----------------------------------------ABOUT SECTION STARTS----------------------------------------->
+<section id="about">
+    <div class="section">
+        <div class="section1">
+            <article>
+                <h1> About Us </h1>
+                <img class="image" src="https://ici.net.au/blog/wp-content/uploads/2019/04/BecomePersonalTrainer.jpg" />
+
+                <h2 class="heading1"> Our Story </h2>
+                <content>In 2019, we started this club, within this journey we organized various evets related to
+                    sports activity. Even our group had great time of togetherness also we enjoyyed a lot in our
+                    sessions.
+                    Most importantly our club continues to change lives by helping people achieve their idividual
+                    potetial.
+                </content>
+        </div>
+        <div>
+            <div class="i1">
+                <img class="image"
+                    src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1200/https://www.thimble.com/wp-content/uploads/2022/05/Personal-Trainer-Salary-Guide-1200x800.jpg" />
+            </div>
+            <h2 class="heading1"> Our Philosophy </h2>
+            <content class="p1"> To offer best equipment and knowledge of sports. Even knowledgeable staff and
+                personal
+                advice
+                in a welcoming environment. Our main motive is to spread awareness among people regardig their
+                fitness
+                and importance of sports in our life.</content>
+        </div>
+    </div>
+    </div>
+
+</section>
+<!----------------------------------------ABOUT SECTION ENDS-------------------------------------------->
+
+
+<!----------------------------------------CONTACT SECTION STARTS---------------------------------------->
+
+<section id="contact">
+    <div id="overlay">
+    <h1 class="c">Your Fitness Career Starts Here</h1>
+        <form name="cform" onsubmit="validateform();">
+            <h1 class="c2"> Contact Us</h1>
+            <label for="name"> Name:</label>
+            <input type="text" id="name" placeholder="Your name">
+            <small class="error"> </small>
+
+            <label for="email"> Email:</label>
+            <input type="text" id="email" placeholder="Your email address">
+            <small class="error"> </small>
+
+            <label for="message"> Message:</label>
+            <textarea id="message" placeholder="Your message" rows="5"></textarea>
+            <small class="error"> </small>
+
+            <div class="center">
+                <input type="submit" value="Send Message">
+                <p id="success"></p>
+            </div>
+
+        </form>
+    </div>
+    
+</section>
+<!----------------------------------------CONTACT SECTION ENDS-------------------------------------------->
+
+
+<!----------------------------------------EVENTS SECTION STARTS-------------------------------------------->
+<section id="events">
+    <h1 class="e">Events Schedule</h1>
+    <!-- <p class="eo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, adipisci?
+
+    </p> -->
+    <div class="container-event">
+        <div class="row">
+            <div class="col">
+                <img class="img3" src="event1.jpg">
+
+                <div class="event-content">
+                    <h4>Athletic</h4>
+                    <span>We focus on improving functional movements that are necessary and common in your daily
+                        activities.<br>
+                        Athletic events include, but are not limited to, bicycle and foot-races.<br>
+                        This event will be held on <b>4th september,2023</b>. It will be full of fun and enjoyment.
+                    </span><br>
+                    <a href="login.html">join</a>
+                </div>
+            </div>
+            <div class="col">
+                <img class="img3" src="event2.jpg">
+                <div class="event-content">
+                    <h4>Indoor Cycling</h4>
+                    <span>Indoor cycling, often called spinning, is a form of exercise with classes focusing on
+                        endurance, strength, intervals, high intensity (race days) and recovery .This event will be held
+                        on 20th June,2023. It will continue for 3-4 weeks for better health.
+                    </span><br>
+                    <a href="login.html">join</a>
+                </div>
+            </div>
+            <div class="col">
+                <img class="img3" src="event3.jpg">
+                <div class="event-content">
+                    <h4>Cycling</h4>
+                    <span>Road bicycle racing is the cycle sport discipline of road cycling, held primarily on paved
+                        roads.<br>This event will be held on <b>26th July,2023</b>.
+                    </span><br>
+                    <a href="login.html">join</a>
+                </div>
+            </div>
+            <div class="col1">
+                <img class="img3" src="event4.jpg">
+                <div class="event-content">
+                    <h4>Yoga</h4>
+                    <span>Yoga has become a global phenomenon over the last several decades.Practitioners often describe
+                        their experiences
+                        using terms like peace, calm, balance, strength, flexibility, and relaxation.<br>
+                        This event will be held on <b>22nd June,2023</b>.</span><br>
+                    <a href="login.html">join</a>
+                </div>
+            </div>
+            <div class="col1">
+                <img class="img3" src="event5.jpg">
+                <div class="event-content">
+                    <h4>Weight lifting</h4>
+                    <span> Weightlifting is a sport in which athletes compete in lifting a barbell loaded with weight
+                        plates from the ground to overhead,<br> with the aim of successfully lifting the heaviest
+                        weights. <br>This event will be held on <b>4th July,2023</b>. </span><br>
+                    <a href="login.html">join</a>
+                </div>
+            </div>
+            <div class="col1">
+                <img class="img3" src="event6.jpg">
+                <div class="event-content">
+                    <h4>Gym</h4>
+                    <span>
+                        This event will be held on <b>17th July,2023</b>
+                    </span><br> <a href="">join</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!----------------------------------------EVENTS SECTION ENDS-------------------------------------------->
+
+
+<!----------------------------------------PLAN-PRICING SECTION STARTS-------------------------------------------->
+<section id="plan-pricing">
+    <h1 class="p">plans & pricing</h1>
+    <h1 class="pp">choose your pricing plans</h1>
+    <div class="package-container">
+        <div class="packages">
+            <h1 class="first">silver membership</h1>
+
+            <h2 class="text1">&dollar;30</h2>
+
+            <ul class="list">
+                <li>short-term trial for beginners</li>&nbsp
+                <li>valid for one month </li>
+            </ul>
+            <a href="login.html" class="button">join now</a>
+            <ul class="list1">&nbsp
+                <li>Unlimited classes</li>&nbsp
+                <li>Fitness assessment</li>&nbsp
+                <li>Locker room with showers</li>
+            </ul>
+        </div>
+        <div class="packages">
+            <h1 class="first">Gold membership</h1>
+            <h2 class="text1">&dollar;25</h2>
+
+            <ul class="list">
+                <li>Every Month</li>
+                <li>ideal for advanced trainers</li>
+                <li>valid for 12 month </li>
+            </ul>
+            <a href="login.html" class="button">join now</a>
+            <ul class="list1">&nbsp
+                <li>Unlimited classes</li>&nbsp
+                <li>Fitness assessment</li>&nbsp
+                <li>Free parking</li>
+            </ul>
+        </div>
+        <div class="packages">
+            <h1 class="first">platinum membership</h1>
+            <h2 class="text1">&dollar;40</h2>
+
+            <ul class="list">
+                <li>Every Month</li>
+                <li>perfect for committed trainers</li>
+            </ul>
+            <a href="login.html" class="button">join now</a>
+            <ul class="list1">&nbsp
+                <li>Unlimited classes</li>&nbsp
+                <li>Private training</li>&nbsp
+                <li>Locker room with showers</li>&nbsp
+
+                <li>Guest privileges</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!----------------------------------------PLAN-PRICING SECTION ENDS-------------------------------------------->
+
+
+<!----------------------------------------SPORTS SECTION STARTS-------------------------------------------->
+<section id="sports">
+    <h1 class="h1"> Sports </h1>
+    
+            <section id="Yoga">
+                <div class="hh1">
+                    <img class="i"
+                        src="https://thumbs.dreamstime.com/b/yoga-meditation-concept-woman-silhouette-healthy-meditating-pose-back-view-sun-light-rays-56996585.jpg">
+
+                    <div class="h">
+                        <h1 class="hh2"> Yoga </h1>
+
+                        The term "yoga" in the Western world often denotes a modern form of Hatha yoga and a
+                        posture-based physical fitness, stress-relief and relaxation technique,consisting largely of
+                        asanas; this differs from traditional yoga, which focuses on meditation and release from worldly
+                        attachments. It was introduced by gurus from India after the success of Swami Vivekananda's
+                        adaptation of yoga without asanas in the late 19th and early 20th centuries.Vivekananda
+                        introduced the Yoga Sutras to the West, and they became prominent after the 20th-century success
+                        of hatha yoga.
+                        Yoga-like practices are first mentioned in the Rigveda.Yoga is referred to in a number of the
+                        Upanishads.The first known appearance of the word "yoga" with the same meaning as the modern
+                        term is in the Katha Upanishad,which was probably composed between the fifth and third centuries
+                        BCE.The most comprehensive text on Yoga, the Yoga Sutras of Patanjali, date to the early
+                        centuries of the Common Era.Yoga philosophy became known as one of the six orthodox
+                        philosophical schools of Hinduism in the second half of the first millennium CE. Hatha yoga
+                        texts began to emerge between the ninth and 11th centuries, originating in tantra.
+                    </div>
+
+                </div>
+            </section>
+            <section id="Athletic">
+                <div class="hh11">
+                    <img class="i" src="https://www.carifta2012.com/images/steeplechase-water.png">
+                    <div class="a">
+                        <h1 class="hh2"> Athletics </h1>
+                        Athletics is a group of sporting events that involves competitive running, jumping, throwing,
+                        and walking.The most common types of athletics competitions are track and field, road running,
+                        cross country running, and racewalking.<br>
+                        The results of racing events are decided by finishing position, while the jumps and throws are
+                        won by the athlete that achieves the highest or furthest measurement from a series of attempts.
+                        The simplicity of the competitions, and the lack of a need for expensive equipment, makes
+                        athletics one of the most common types of sports in the world. Athletics is mostly an individual
+                        sport, with the exception of relay races and competitions which combine athletes' performances
+                        for a team score, such as cross country.
+                        <br>
+                        Organized athletics are traced back to the Ancient Olympic Games from 776 BC. The rules and
+                        format of the modern events in athletics were defined in Western Europe and North America in the
+                        19th and early 20th century, and were then spread to other parts of the world. Most modern top
+                        level meetings are held under the auspices of World Athletics, the global governing body for the
+                        sport of athletics, or its member continental and national federations.
+                    </div>
+                </div>
+            </section>
+            <section id="Swimming">
+                <div class="hh1">
+                    <img class="i"
+                        src="https://static01.nyt.com/images/2021/07/29/sports/29olympics-live-swimming-how-deep-is-the-pool/merlin_191776800_87dd3a94-950c-48b4-8387-b0fbd797c609-videoSixteenByNineJumbo1600.jpg">
+                    <div class="s">
+                        <h1 class="hh2"> Swimming </h1>
+                        Swimming is an individual or team racing sport that requires the use of one's entire body to
+                        move through water. The sport takes place in pools or open water (e.g., in a sea or lake).
+                        Competitive swimming is one of the most popular Olympic sports, with varied distance events in
+                        butterfly, backstroke, breaststroke, freestyle, and individual medley. In addition to these
+                        individual events, four swimmers can take part in either a freestyle or medley relay. A medley
+                        relay consists of four swimmers who will each swim a different stroke, ordered as backstroke,
+                        breaststroke, butterfly and freestyle.<br>
+                        Swimming each stroke requires a set of specific techniques; in competition, there are distinct
+                        regulations concerning the acceptable form for each individual stroke.There are also regulations
+                        on what types of swimsuits, caps, jewelry and injury tape that are allowed at
+                        competitions.Although it is possible for competitive swimmers to incur several injuries from the
+                        sport, such as tendinitis in the shoulders or knees, there are also multiple health benefits
+                        associated with the sport.
+                    </div>
+            </section>
+            <section id="tennis">
+                <div class="hh11">
+                    <img class="i"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_CBLBUjLsxjafruK5OUGPsr3X-ffxQePXuQ&usqp=CAU">
+                    <div class="t">
+                        <h1 class="hh2"> Tennis </h1>
+                        Tennis is a racket sport that is played either individually against a single opponent (singles)
+                        or between two teams of two players each (doubles). Each player uses a tennis racket that is
+                        strung with cord to strike a hollow rubber ball covered with felt over or around a net and into
+                        the opponent's court. The object of the game is to manoeuvre the ball in such a way that the
+                        opponent is not able to play a valid return. The player who is unable to return the ball validly
+                        will not gain a point, while the opposite player will. <br>
+                        Tennis is an Olympic sport and is played at all levels of society and at all ages. The sport can
+                        be played by anyone who can hold a racket, including wheelchair users. The original forms of
+                        tennis developed in France during the late Middle Ages.The modern form of tennis originated in
+                        Birmingham, England, in the late 19th century as lawn tennis. It had close connections both to
+                        various field (lawn) games such as croquet and bowls as well as to the older racket sport today
+                        called real tennis.<br>
+                        The rules of modern tennis have changed little since the 1890s. Two exceptions are that until
+                        1961 the server had to keep one foot on the ground at all times, and the adoption of the
+                        tiebreak in the 1970s.A recent addition to professional tennis has been the adoption of
+                        electronic review technology coupled with a point-challenge system, which allows a player to
+                        contest the line call of a point, a system known as Hawk-Eye.
+                    </div>
+                </div>
+            </section>
+            <section id="badminton">
+                <div class="hh1">
+                    <img class="i"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnKcP12nMam8blD8MTZPTJ-aHHfr-DIbFsCA&usqp=CAU">
+                    <div class="b">
+                        <h1 class="hh2"> Badminton </h1>
+                        Badminton is a racquet sport played using racquets to hit a shuttlecock across a net. Although
+                        it may be played with larger teams, the most common forms of the game are "singles" (with one
+                        player per side) and "doubles" (with two players per side). Badminton is often played as a
+                        casual outdoor activity in a yard or on a beach; formal games are played on a rectangular indoor
+                        court. Points are scored by striking the shuttlecock with the racquet and landing it within the
+                        other team's half of the court.
+
+
+                        The shuttlecock is a feathered or plastic projectile that flies differently from the balls used
+                        in many other sports. In particular, the feathers create much higher drag, causing the
+                        shuttlecock to decelerate more rapidly. Shuttlecocks also have a high top speed compared to the
+                        balls in other racquet sports. The flight of the shuttlecock gives the sport its distinctive
+                        nature.
+                        <br>
+                        The game developed in British India from the earlier game of battledore and shuttlecock.
+                        European play came to be dominated by Denmark but the game has become very popular in Asia, with
+                        recent competitions dominated by China. In 1992, badminton debuted as a Summer Olympic sport
+                        with four events: men's singles, women's singles, men's doubles, and women's doubles; mixed
+                        doubles was added four years later. At high levels of play, the sport demands excellent fitness:
+                        players require aerobic stamina, agility, strength, speed, and precision. It is also a technical
+                        sport, requiring good motor coordination and the development of sophisticated racquet movements.
+                    </div>
+                </div>
+            </section>
+            <section id="Football">
+                <div class="hh11">
+                    <img class="i"
+                        src="https://phantom-marca.unidadeditorial.es/2fb1d3b863c33b7fff69c8a173752187/resize/1200/f/jpg/assets/multimedia/imagenes/2022/11/25/16694129388697.jpg">
+                    <div class="f">
+                        <h1 class="hh2"> Football </h1>
+                        Football is a family of team sports that involve, to varying degrees, kicking a ball to score a
+                        goal. Unqualified, the word football normally means the form of football that is the most
+                        popular where the word is used. Sports commonly called football include association football
+                        (known as soccer in North America, Ireland and Australia); gridiron football (specifically
+                        American football or Canadian football); Australian rules football; rugby union and rugby
+                        league; and Gaelic football.These various forms of football share to varying extents common
+                        origins and are known as "football codes". <br>
+                        There are a number of references to traditional, ancient, or prehistoric ball games played in
+                        many different parts of the world.Contemporary codes of football can be traced back to the
+                        codification of these games at English public schools during the 19th century.The expansion and
+                        cultural influence of the British Empire allowed these rules of football to spread to areas of
+                        British influence outside the directly controlled Empire.By the end of the 19th century,
+                        distinct regional codes were already developing: Gaelic football, for example, deliberately
+                        incorporated the rules of local traditional football games in order to maintain their heritage.
+                        In 1888, The Football League was founded in England, becoming the first of many professional
+                        football associations. During the 20th century, several of the various kinds of football grew to
+                        become some of the most popular team sports in the world.
+                    </div>
+                </div>
+            </section>
+            <section id="cricket">
+                <div class="hh1">
+                    <img class="i"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZkfo8KeB_tazlEinqRkQZ54Vo3WeRECvXoeR9OdPE6hpmluDBk7QA8VpGQMCf3srPtaY&usqp=CAU">
+                    <div class="c1">
+                        <h1 class="hh2"> Cricket </h1>
+                        Cricket is a bat-and-ball game played between two teams of eleven players on a field at the
+                        centre of which is a 22-yard (20-metre) pitch with a wicket at each end, each comprising two
+                        bails balanced on three stumps. The batting side scores runs by striking the ball bowled at one
+                        of the wickets with the bat and then running between the wickets, while the bowling and fielding
+                        side tries to prevent this (by preventing the ball from leaving the field, and getting the ball
+                        to either wicket) and dismiss each batter (so they are "out"). Means of dismissal include being
+                        bowled, when the ball hits the stumps and dislodges the bails, and by the fielding side either
+                        catching the ball after it is hit by the bat, but before it hits the ground, or hitting a wicket
+                        with the ball before a batter can cross the crease in front of the wicket. When ten batters have
+                        been dismissed, the innings ends and the teams swap roles. The game is adjudicated by two
+                        umpires, aided by a third umpire and match referee in international matches. They communicate
+                        with two off-field scorers who record the match's statistical information.<br>
+
+                        The earliest reference to cricket is in South East England in the mid-16th century. It spread
+                        globally with the expansion of the British Empire, with the first international matches in the
+                        second half of the 19th century. The game's governing body is the International Cricket Council
+                        (ICC), which has over 100 members, twelve of which are full members who play Test matches. The
+                        game's rules, the Laws of Cricket, are maintained by Marylebone Cricket Club (MCC) in London.
+                        The sport is followed primarily in South Asia, Australasia, the United Kingdom, Southern Africa
+                        and the West Indies.
+                    </div>
+                </div>
+            </section>
+</section>
+<!----------------------------------------SPORTS SECTION ENDS-------------------------------------------->
+
+<body>
+
+    </html>
